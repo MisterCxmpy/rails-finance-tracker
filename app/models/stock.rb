@@ -7,7 +7,7 @@ class Stock < ApplicationRecord
       endpoint: 'https://cloud.iexapis.com/v1'
     )
 
-    client.quote(ticker_symbol).latest_price
+    new(ticker: ticker_symbol, name: client.company(ticker_symbol).company_name, last_price: client.quote(ticker_symbol).latest_price)
   end
     
 end
