@@ -15,7 +15,6 @@ class FriendshipsController < ApplicationController
     friend = User.find(params[:id])
     flash[:notice] = "Stopped following #{friend.full_name}"
     friendship.destroy
-    friend.destroy
     redirect_to my_friends_path
   end
 end
