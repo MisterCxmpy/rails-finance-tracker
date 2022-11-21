@@ -1,24 +1,37 @@
-# README
+# **Messaging board**
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+##### Prerequisites
+The setups steps expect following tools installed on the system.
 
-Things you may want to cover:
+- Git
+- Ruby [v2.7.2](https://ruby-doc.org/core-2.7.2/)
+- Rails [v6.0.6](https://rubygems.org/gems/rails/versions/6.0.0)
+- [Bootstrap](https://getbootstrap.com)
 
-* Ruby version
+##### 1. Check out the repository
 
-* System dependencies
+```bash
+git clone git@github.com/MisterCxmpy/rails-finance-tracker.git
+```
 
-* Configuration
+##### 2. Run bundle install
 
-* Database creation
+```bash
+bundle install
+```
 
-* Database initialization
+##### 3. Start the Rails server
+You can start the rails server using the command given below.
 
-* How to run the test suite
+```ruby
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+And now you can visit the site with the URL http://localhost:3000
 
-* Deployment instructions
+Fatures include:
 
-* ...
+- Creating accounts
+- Track any stock
+- Add users
+- View other users tracked stocks
